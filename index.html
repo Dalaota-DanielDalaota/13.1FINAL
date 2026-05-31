@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jumbled Rush</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- SUPABASE -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div id="homeScreen">
+
+    <h1>Jumbled Rush</h1>
+
+    <p class="subtitle">
+        Rearrange the motivational quotes before time runs out!
+    </p>
+
+    <input type="text" id="playerName" placeholder="Enter Your Name">
+
+    <div style="text-align:center;">
+        <button onclick="startGame()">START GAME</button>
+    </div>
+
+    <div id="leaderboard">
+
+        <h3>🏆 Leaderboard</h3>
+
+        <ul id="attemptList"></ul>
+
+    </div>
+
+</div>
+
+<div id="gameScreen">
+
+    <h1>Jumbled Rush</h1>
+
+    <div class="info">
+
+        <div class="card">
+            <div class="card-title">PLAYER</div>
+            <div class="card-value" id="displayName"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">ROUND</div>
+            <div class="card-value">
+                <span id="round">1</span>/11
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">TIME</div>
+
+            <div class="card-value">
+                <span id="time">15</span>s
+            </div>
+
+            <div class="timer-container">
+                <div class="timer-bar" id="timerBar"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">SCORE</div>
+            <div class="card-value" id="score">0</div>
+        </div>
+
+    </div>
+
+    <div class="section-title">JUMBLED WORDS</div>
+
+    <div class="jumbled-words" id="jumbledWords"></div>
+
+    <div class="section-title">YOUR ANSWER</div>
+
+    <div class="answer-area" id="answerArea"></div>
+
+    <div style="text-align:center; margin-top:20px;">
+        <button id="checkBtn">CHECK ANSWER</button>
+    </div>
+
+    <div class="message" id="message"></div>
+
+    <div class="break-screen" id="breakScreen"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
