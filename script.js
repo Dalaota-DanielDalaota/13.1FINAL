@@ -5,8 +5,8 @@
 const SUPABASE_URL =
 "https://jvoqbmkcnvsctalenabh.supabase.co";
 
-const SUPABASE_KEY =
-"YOUR_SUPABASE_KEY_HERE";
+const SUPABASE_KEY = 
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp2b3FibWtjbnZzY3RhbGVuYWJoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk3OTk5ODAsImV4cCI6MjA5NTM3NTk4MH0.w01iVgVlQYqomH24r8tGo5acrqpj0EUhzZJwr_vbb-A";
 
 const supabaseClient =
 supabase.createClient(
